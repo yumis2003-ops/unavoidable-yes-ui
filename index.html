@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebPortal - 日本最大級のポータルサイト（モック）</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- FontAwesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- ==========================================
+       Portal Header
+       ========================================== -->
+  <header>
+    <div class="header-left">
+      <div class="logo">Web<span>Portal!</span></div>
+      <div class="search-container">
+        <input type="text" class="search-input" placeholder="ウェブ検索またはキーワードを入力" value="絶対に「はい」を押す方法">
+        <button class="search-btn">
+          <i class="fa-solid fa-magnifying-glass"></i> 検索
+        </button>
+      </div>
+    </div>
+    <div class="header-right">
+      <span><i class="fa-solid fa-cloud-sun"></i> 東京: 26℃</span>
+      <span><i class="fa-solid fa-train"></i> 運行情報: 平常</span>
+    </div>
+  </header>
+
+  <!-- ==========================================
+       Main Portal Layout
+       ========================================== -->
+  <div class="container">
+    
+    <!-- Left Column: Services -->
+    <aside class="left-sidebar">
+      <div class="card">
+        <h3 class="card-title">主なサービス</h3>
+        <ul class="services-list">
+          <li><a href="#"><span class="icon"><i class="fa-solid fa-envelope"></i></span>メール</a></li>
+          <li><a href="#"><span class="icon"><i class="fa-solid fa-gavel"></i></span>オークション</a></li>
+          <li><a href="#"><span class="icon"><i class="fa-solid fa-cart-shopping"></i></span>ショッピング</a></li>
+          <li><a href="#"><span class="icon"><i class="fa-solid fa-plane"></i></span>トラベル</a></li>
+          <li><a href="#"><span class="icon"><i class="fa-solid fa-newspaper"></i></span>ニュース</a></li>
+          <li><a href="#"><span class="icon"><i class="fa-solid fa-cloud-showers-water"></i></span>天気予報</a></li>
+          <li><a href="#"><span class="icon"><i class="fa-solid fa-route"></i></span>路線情報</a></li>
+          <li><a href="#"><span class="icon"><i class="fa-solid fa-map-location-dot"></i></span>地図・ナビ</a></li>
+          <li><a href="#"><span class="icon"><i class="fa-solid fa-coins"></i></span>ファイナンス</a></li>
+          <li><a href="#"><span class="icon"><i class="fa-solid fa-wand-magic-sparkles"></i></span>占い</a></li>
+          <li><a href="#"><span class="icon"><i class="fa-solid fa-gamepad"></i></span>ゲーム</a></li>
+          <li><a href="#"><span class="icon"><i class="fa-solid fa-book-open"></i></span>百科事典</a></li>
+        </ul>
+      </div>
+    </aside>
+
+    <!-- Center Column: Topics & News -->
+    <main class="center-content">
+      <div class="card">
+        <div class="news-tabs">
+          <div class="news-tab active">主要</div>
+          <div class="news-tab">国内</div>
+          <div class="news-tab">国際</div>
+          <div class="news-tab">IT・科学</div>
+          <div class="news-tab">エンタメ</div>
+          <div class="news-tab">スポーツ</div>
+        </div>
+        <ul class="news-list">
+          <li>
+            <a href="#" class="news-link">
+              <span class="news-badge">NEW</span>
+              【速報】画期的な「規約同意UI」が発表される。開発元は自信
+            </a>
+            <span class="news-time">10分前</span>
+          </li>
+          <li>
+            <a href="#" class="news-link">
+              「いいえ」を押そうとしたユーザー、ボタンが逃げる現象に困惑
+            </a>
+            <span class="news-time">24分前</span>
+          </li>
+          <li>
+            <a href="#" class="news-link">
+              AIアシスタントの進化でコーディング速度が劇的に向上
+            </a>
+            <span class="news-time">1時間前</span>
+          </li>
+          <li>
+            <a href="#" class="news-link">
+              今年の夏は猛暑の予想、水分補給と適切なエアコン使用を呼びかけ
+            </a>
+            <span class="news-time">2時間前</span>
+          </li>
+          <li>
+            <a href="#" class="news-link">
+              最新のスマートウォッチ、健康管理機能がさらに充実
+            </a>
+            <span class="news-time">3時間前</span>
+          </li>
+          <li>
+            <a href="#" class="news-link">
+              週末の全国の天気は概ね晴れ、お出かけ日和に
+            </a>
+            <span class="news-time">4時間前</span>
+          </li>
+          <li>
+            <a href="#" class="news-link">
+              注目のスタートアップ企業が新しいオフィスを公開
+            </a>
+            <span class="news-time">5時間前</span>
+          </li>
+          <li>
+            <a href="#" class="news-link">
+              プロ野球、注目のドラフト1位ルーキーが初登板で快投
+            </a>
+            <span class="news-time">6時間前</span>
+          </li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">話題のニュース写真</h3>
+        <div style="display: flex; gap: 12px; margin-top: 8px;">
+          <div style="flex: 1; background: #eee; height: 100px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #888; border-radius: var(--radius-sm)">
+            <i class="fa-solid fa-image" style="font-size: 24px; margin-bottom: 4px;"></i><br>ニュース画像1
+          </div>
+          <div style="flex: 1; background: #eee; height: 100px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #888; border-radius: var(--radius-sm)">
+            <i class="fa-solid fa-image" style="font-size: 24px; margin-bottom: 4px;"></i><br>ニュース画像2
+          </div>
+          <div style="flex: 1; background: #eee; height: 100px; display: flex; align-items: center; justify-content: center; font-size: 11px; color: #888; border-radius: var(--radius-sm)">
+            <i class="fa-solid fa-image" style="font-size: 24px; margin-bottom: 4px;"></i><br>ニュース画像3
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Right Column: Login & Widgets -->
+    <aside class="right-sidebar">
+      <div class="card login-box">
+        <h4>WebPortal IDでログイン</h4>
+        <p style="font-size: 11px; color: var(--text-gray); margin-top: 4px;">メールやカレンダーなど便利に使おう！</p>
+        <a href="#" class="login-btn">IDを新規登録・ログイン</a>
+        <div class="login-sub-links">
+          <a href="#">ログインできない場合</a>
+          <a href="#">セーフティー設定</a>
+        </div>
+      </div>
+
+      <div class="card ad-box">
+        <p>【PR】絶対に「はい」と言わせる極意！</p>
+        <p style="font-size: 11px; font-weight: normal; margin-top: 8px; color: #a17b3f;">
+          誰でも簡単、驚きのイエス誘導テクニックを公開中。今すぐチェック！
+        </p>
+      </div>
+
+      <div class="card">
+        <h3 class="card-title">本日の運勢占い</h3>
+        <div style="display: flex; align-items: center; gap: 12px;">
+          <span style="font-size: 32px; color: var(--portal-yellow);"><i class="fa-solid fa-star"></i></span>
+          <div>
+            <p style="font-weight: bold;">おひつじ座: 超大吉</p>
+            <p style="font-size: 11px; color: var(--text-gray);">今日は何をやってもうまくいきます。特に契約や同意事項には最適な日です！</p>
+          </div>
+        </div>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ==========================================
+       Agreement Overlay (Popup Dialog)
+       ========================================== -->
+  <div class="modal-overlay" id="agreementOverlay">
+    <div class="agreement-modal" id="agreementModal">
+      
+      <div class="modal-header">
+        <i class="fa-solid fa-circle-exclamation"></i>
+        <span>【重要】サービス統合に伴う新利用規約への同意のお願い</span>
+      </div>
+      
+      <div class="modal-body">
+        <p class="modal-instruction">
+          平素よりWebPortalをご利用いただきありがとうございます。<br>
+          この度、サービスの統合およびセキュリティ強化に伴い、利用規約を改定いたしました。<br>
+          新サービスを継続してご利用いただくには、以下の規約に同意いただく必要があります。
+        </p>
+        
+        <div class="terms-box">
+          <h4>WebPortal 統合利用規約</h4>
+          <p>
+            <strong>第1条（目的）</strong><br>
+            本規約は、当グループが提供するすべてのインターネットサービス（以下「本サービス」）の利用条件を定めるものです。ユーザーが本サービスを利用するためには、本規約に無条件で同意いただく必要があります。
+          </p>
+          <p>
+            <strong>第2条（同意の義務）</strong><br>
+            ユーザーは、本サービスの利用にあたり、一切の留保なく「同意する」ボタンを押下するものとします。いかなる理由があろうとも「同意しない」の選択は受け付けられず、またシステム的にも選択不可能な設計となっております。
+          </p>
+          <p>
+            <strong>第3条（回避行動の禁止）</strong><br>
+            ユーザーが「同意しない」ボタンを執拗にクリックしようとする行為（以下「逃避行為」）は無駄であり、時間の浪費と見なされます。ボタンにカーソルを近づけるたびに蓄積される「回避カウンター」は、ユーザーの抵抗の証として記録されます。
+          </p>
+          <p>
+            <strong>第4条（自己決定権の放棄）</strong><br>
+            本画面において「同意しない」ボタンを押すことは事実上不可能です。諦めて速やかに「同意して進む」ボタンをクリックし、快適なポータルライフをスタートさせてください。
+          </p>
+          <p>
+            <strong>第5条（準拠法および管轄裁判所）</strong><br>
+            本規約の解釈および適用にあたっては、日本国法を準拠法とします。また、本規約に関して生じる紛争については、当サイト管理者が有利となる裁判所を第一審の専属的合意管轄裁判所とします。
+          </p>
+        </div>
+
+        <div class="counter-bar">
+          <span>「同意しない」の回避に挑戦した回数:</span>
+          <span class="counter-value" id="evadeCounter">0 回</span>
+        </div>
+      </div>
+
+      <div class="modal-footer" id="modalFooter">
+        <!-- Yes button (Easy to click) -->
+        <button class="btn btn-yes" id="btnYes">同意して進む</button>
+        <!-- Evading No button -->
+        <button class="btn btn-no" id="btnNo">同意しない</button>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- ==========================================
+       Success Overlay
+       ========================================== -->
+  <div class="success-overlay" id="successOverlay">
+    <canvas class="celebration-canvas" id="celebrationCanvas"></canvas>
+    
+    <div class="success-content">
+      <div class="success-icon">
+        <i class="fa-solid fa-check"></i>
+      </div>
+      <h2 class="success-title">ご同意ありがとうございます！</h2>
+      <p class="success-text">
+        新利用規約への同意手続きが正常に完了しました。<br>
+        これで引き続き、WebPortalのすべての機能とプレミアムサービスを安全にお使いいただけます。
+      </p>
+      
+      <div class="success-stats" id="successStats">
+        「同意しない」ボタンを <strong>0回</strong> 回避しました。
+      </div>
+      
+      <p style="font-size: 12px; color: var(--text-gray); font-style: italic;">
+        ※ 最初から「同意して進む」を押していれば、もっと時間を節約できたかもしれません。
+      </p>
+      
+      <button class="btn btn-restart" id="btnRestart">
+        <i class="fa-solid fa-rotate-left"></i> もう一度挑戦する
+      </button>
+    </div>
+  </div>
+
+  <!-- JavaScript logic -->
+  <script src="app.js"></script>
+</body>
+</html>
